@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Incident Response Report</title>
+</head>
+<body>
+
+    <h2>Incident Details</h2>
+    <table border="1">
+        <tr>
+            <th>Incident ID</th>
+            <th>Date/Time of Incident</th>
+            <th>Incident Type</th>
+            <th>Incident Description</th>
+            <th>Customers Impacted</th>
+            <th>Root Cause</th>
+        </tr>
+        <tr>
+            <td>{{ incident_id }}</td>
+            <td>{{ incident_timestamp }}</td>
+            <td>{{ incident_type }}</td>
+            <td>{{ incident_description }}</td>
+            <td>{{ incident_customers_impacted }}</td>
+            <td>{{ incident_root_cause }}</td>
+        </tr>
+    </table>
+
+    <h2>Incident Recovery</h2>
+    <table border="1">
+        <tr>
+            <th>Recovery Actions</th>
+            <th>Techniques and Tools</th>
+        </tr>
+        <tr>
+            <td>{{ recovery_actions }}</td>
+            <td>{{ techniques_and_tools }}</td>
+        </tr>
+    </table>
+
+    <h2>Evidence Documentation</h2>
+    <p>{{ pcapng_file }}</p>
+
+</body>
+</html>
